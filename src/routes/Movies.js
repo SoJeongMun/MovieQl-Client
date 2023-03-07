@@ -1,7 +1,7 @@
 export default function Movies() {
   return (
     <>
-      <div>MOVIE</div>
+      <div>The List of the Movies</div>
     </>
   );
 }

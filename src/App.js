@@ -1,7 +1,17 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Movies from "./routes/Movies";
+import Movie from "./routes/Movie";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Movies />} />
+        <Route path="/movies/:id" element={<Movie />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
